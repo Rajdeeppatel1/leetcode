@@ -1,23 +1,19 @@
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        int count =0;
-        
         Arrays.sort(nums);
-        for(int i=0;i<nums.length-1;i++)
-        {
-            if (nums[i]==nums[i+1]){
-                count++;
-            }
-        }
-        if (count>0){
-    return true;
+        boolean  ans=false ;
+        
+        for(int i=0;i<nums.length-1;i++){
+            if(nums[i]==nums[i+1]){
+            ans=true;
+            break ;
+            
         }
         else{
-            return false;
-        }
-        
-
-        
+            ans=false;
+        }}
+           return ans;
         
     }
+ 
 }
