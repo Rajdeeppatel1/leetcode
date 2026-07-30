@@ -8,7 +8,7 @@ class Solution {
         expected[i]=heights[i];
 
     }
-    Arrays.sort(heights);
+    Arrays.sort(expected);
       for(int i=0;i<heights.length;i++){
       
         
