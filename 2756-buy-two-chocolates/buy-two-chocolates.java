@@ -1,7 +1,12 @@
 class Solution {
     public int buyChoco(int[] prices, int money) {
-        Arrays.sort(prices);
-       int ans=(prices[0]+prices[1]>money)? money : money-(prices[0]+prices[1]);
-       return ans;
+       Arrays.sort(prices);
+        if(prices[0]+prices[1]>money){
+            return money;
+        }
+        else{
+                int a=prices[0]+prices[1];
+                return money -a;  
+        }
     }
 }
